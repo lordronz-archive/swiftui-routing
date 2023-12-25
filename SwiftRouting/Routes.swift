@@ -112,10 +112,6 @@ struct NavigationEnvironmentKey: EnvironmentKey {
     static var defaultValue: RouteViewModel = .init()
 }
 
-struct NavigateToRootEnvironmentKey: EnvironmentKey {
-    static var defaultValue: RouteViewModel = .init()
-}
-
 extension EnvironmentValues {
     var navigate: RouteViewModel {
         get { self[NavigationEnvironmentKey.self] }
